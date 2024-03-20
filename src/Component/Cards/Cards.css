@@ -1,0 +1,42 @@
+@media (max-width: 1280px) {
+    .child{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       width: 80%;
+    }
+    #google-map-iframe{
+       width: 100%;
+       margin-left: -7.5rem;
+    }
+ }
+ 
+ @media (max-width: 1024px) {
+    .details{
+     padding: 6px;
+     height: 290px;
+    }
+    .title{
+     height: 10rem;
+    }
+    .child{
+     display: grid;
+     grid-template-columns: none;
+     width: 70%;
+    }
+      #google-map-iframe{
+       width: 108%;
+       margin-left: -8rem;
+    }
+    }
+    
+ /* @media (max-width: 800px) {
+     .details{
+      padding: 6px;
+     }
+     .title{
+      height: 10rem;
+     }
+     .child{
+      grid-template-columns: 1fr 1fr;
+     }
+     } */

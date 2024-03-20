@@ -1,0 +1,61 @@
+.parent{
+    border-top: 1px solid #CBD5E0;
+ }
+ 
+ .relevant{
+     display: none;
+ }
+ 
+ @media (max-width: 1280px) {
+    .btn2{
+      margin-right: 8rem;
+    }
+   }
+ 
+ @media (max-width: 1024px) {
+  .relevant{
+     display: block;
+     margin-left: 15rem;
+  }
+  .btn1{
+     margin-right: 5.5rem;
+  }
+  .btn2{
+     order: -1;
+     margin-left: -15.5rem;
+     gap: 4px;
+  }
+ }
+ 
+ @media (max-width: 800px) {
+    .btn1{
+       margin-right: 1.5rem;
+    }
+   }
+ 
+ @media (max-width: 500px) {
+    .parent{
+       width: 53rem;
+       margin-top: -0.5rem;
+       border-top: 1px solid #CBD5E0;
+    }
+    .btn1{
+      padding: 1rem;
+      margin-left: 5rem;
+    }
+    .btn2{
+       margin-top: 1rem;
+    }
+    .most{
+       width: 12rem;
+       height: 2.5rem;
+       padding: 0;
+ 
+     }
+     .relevant{
+       width: 10rem;
+       height: 2.5rem;
+       padding: 0;
+     }
+ 
+   }

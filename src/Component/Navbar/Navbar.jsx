@@ -1,41 +1,74 @@
-import {ReactDOM, useRef, useState} from 'react'; 
+import React, { useState } from 'react';
 import "./Navbar.css";
 
 const Navbar = () => {
-  const menuRef = useRef();
-  
-  const dropdownToggle = () => {
-    menuRef.current.classList.toggle("nav-menu-visible");
-  }
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <>
-      <div className="flex p-2 justify-between items-center  flex-wrap">
-        <div className="flex items-center">
-          <h2 className="font-bold text-2xl text-orange-500">LIST</h2>
+    <nav className=" pt-2">
+      <div className="  flex justify-between items-center">
+        <h1 className="font-bold text-2xl text-orange-500">List</h1>
+        <div className="md:flex md:w-1/2 md:justify-center">
+        <svg className="absolute  h-5 w-6 text-gray-400 hover:text-gray-500 s-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+      viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    </svg>
+    <input type="text" placeholder="Find (almost) anything" className="border border-gray-200 rounded-2xl py-1 px-2 pl-10 w-96 outline-none search" />
         </div>
-        <div className="relative flex items-center  md:inline-flex search-div">
-          <svg className="absolute left-2 h-5 w-6 text-gray-400 hover:text-gray-500 s-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
-            viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
-          <input type="text" placeholder="Find (almost) anything" className="border border-gray-200 rounded-2xl py-1 px-2 pl-10 outline-none search" />
+        <div className="md:hidden">
+          <button onClick={toggleMenu} className="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              {isOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              )}
+            </svg>
+          </button>
         </div>
-
-        <div className="flex items-center gap-8 nav-links nav-menu" ref={menuRef}>
-          <ul className='flex gap-5 text-blue-700 list'>
-            <li>How it works</li>
-            <li>List an Item</li>
+        <div className={`md:flex ${isOpen ? 'block' : 'hidden'} `}>
+          <ul className="md:flex items-center space-x-4 ">
+            <li>
+              <a href="#" className="text-blue-700  hover:text-gray-300">
+                Item 1
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-blue-700  hover:text-gray-300">
+                Item 2
+              </a>
+            </li>
+            <li>
+              <button className="hover:bg-blue-700 border text-gray-900 rounded-3xl bg-gray-100 py-2 px-4">
+              Login or Sign up
+              </button>
+            </li>
           </ul>
-          <button className="border px-4 py-1 text-gray-900 rounded-3xl bg-gray-100 login">Login or Sign up</button>
         </div>
-        <svg className="hamburger" onClick={dropdownToggle} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30">
-          <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"></path>
-        </svg>
       </div>
-  </>
-  )
-}
+    </nav>
+  );
+};
 
 export default Navbar;

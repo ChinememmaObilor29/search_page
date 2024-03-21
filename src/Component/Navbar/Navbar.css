@@ -3,6 +3,28 @@
     margin-right: 21rem;
 }
 
+/* .nav-list{
+    margin-left: 30rem;
+} */
+
+
+@media (max-width: 1280px) {
+    .search-div{
+        width: 25%;
+    }
+    .search{
+        width: 20rem;
+    }
+    .s-icon{
+        margin-right: 50rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .login{
+        margin-right: 42rem;
+    }
+}
 
 
 

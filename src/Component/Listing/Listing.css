@@ -7,24 +7,32 @@
  }
  
  @media (max-width: 1280px) {
+   .relevant{
+      display: block;
+   }
+   .btn1{
+      margin-right: 43rem;
+      gap: 4px;
+   }
     .btn2{
-      margin-right: 8rem;
+      order: -1;
     }
    }
  
  @media (max-width: 1024px) {
-  .relevant{
-     display: block;
-     margin-left: 15rem;
-  }
-  .btn1{
-     margin-right: 5.5rem;
-  }
-  .btn2{
-     order: -1;
-     margin-left: -15.5rem;
-     gap: 4px;
-  }
+   .relevant{
+      display: block;
+   }
+   .btn1{
+      margin-right: 32rem;
+   }
+   .date{
+      display: none;
+   }
+    .btn2{
+      order: -1;
+      margin-left: -0.6rem;
+    }
  }
  
  @media (max-width: 800px) {
@@ -41,20 +49,18 @@
     }
     .btn1{
       padding: 1rem;
-      margin-left: 5rem;
+      margin-right: 40rem;
     }
     .btn2{
        margin-top: 1rem;
     }
     .most{
-       width: 12rem;
-       height: 2.5rem;
-       padding: 0;
+       display: none;
  
      }
      .relevant{
        width: 10rem;
-       height: 2.5rem;
+       height: 2.1rem;
        padding: 0;
      }
  

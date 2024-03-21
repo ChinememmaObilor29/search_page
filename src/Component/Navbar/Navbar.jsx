@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className=" pt-2">
       <div className="  flex justify-between items-center">
         <h1 className="font-bold text-2xl text-orange-500">List</h1>
-        <div className="md:flex md:w-1/2 md:justify-center">
+        <div className="md:flex md:w-1/2  search-div">
         <svg className="absolute  h-5 w-6 text-gray-400 hover:text-gray-500 s-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
       viewBox="0 0 24 24" stroke="currentColor">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
@@ -47,20 +47,20 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <div className={`md:flex ${isOpen ? 'block' : 'hidden'} `}>
+        <div className={`md:flex ${isOpen ? 'block' : 'hidden'} nav-links`}>
           <ul className="md:flex items-center space-x-4 ">
-            <li>
+            <li className='nav-item'> 
               <a href="#" className="text-blue-700  hover:text-gray-300">
                 Item 1
               </a>
             </li>
-            <li>
+            <li className='nav-item'>
               <a href="#" className="text-blue-700  hover:text-gray-300">
                 Item 2
               </a>
             </li>
             <li>
-              <button className="hover:bg-blue-700 border text-gray-900 rounded-3xl bg-gray-100 py-2 px-4">
+              <button className="text-gray-900 rounded-3xl bg-gray-100 py-1 px-4 login">
               Login or Sign up
               </button>
             </li>

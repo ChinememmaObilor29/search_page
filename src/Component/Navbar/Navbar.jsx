@@ -9,22 +9,22 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" pt-2">
-      <div className="  flex justify-between items-center">
+    <nav className="pt-2">
+      <div className="flex justify-between items-center">
         <h1 className="font-bold text-2xl text-orange-500">List</h1>
-        <div className="md:flex md:w-1/2  search-div">
-        <svg className="absolute  h-5 w-6 text-gray-400 hover:text-gray-500 s-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
-      viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-    </svg>
-    <input type="text" placeholder="Find (almost) anything" className="border border-gray-200 rounded-2xl py-1 px-2 pl-10 w-96 outline-none search" />
+        <div className="md:flex md:w-1/2 search-div">
+          <svg className="absolute h-5 w-6 text-gray-400 hover:text-gray-500 s-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <input type="text" placeholder="Find (almost) anything" className="border border-gray-200 rounded-2xl py-1 px-2 pl-10 w-96 outline-none search" />
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden ">
           <button onClick={toggleMenu} className="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-6 w-6 h-icon"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -49,7 +49,7 @@ const Navbar = () => {
         </div>
         <div className={`md:flex ${isOpen ? 'block' : 'hidden'} nav-links`}>
           <ul className="md:flex items-center space-x-4 ">
-            <li className='nav-item'> 
+            <li className='nav-item'>
               <a href="#" className="text-blue-700  hover:text-gray-300">
                 Item 1
               </a>
@@ -61,7 +61,7 @@ const Navbar = () => {
             </li>
             <li>
               <button className="text-gray-900 rounded-3xl bg-gray-100 py-1 px-4 login">
-              Login or Sign up
+                Login or Sign up
               </button>
             </li>
           </ul>

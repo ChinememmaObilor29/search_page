@@ -8,7 +8,7 @@ const Listing = () => {
     <div className="flex btn1">
         <button className="mr-2 border px-4 py-1 text-gray-900 rounded-3xl bg-gray-100">Location</button>
         <button className="mr-2 border px-4 py-1 text-gray-900 rounded-3xl bg-gray-100">Category</button>
-        <button className="mr-2 border px-4 py-1 text-gray-900 rounded-3xl bg-gray-100">Dates</button>
+        <button className="mr-2 border px-4 py-1 text-gray-900 rounded-3xl bg-gray-100 date">Dates</button>
     </div>
     <div className="flex btn2">
         <button className='border px-4 py-1 text-gray-100 rounded-3xl bg-orange-500 relevant'>Relevant</button>

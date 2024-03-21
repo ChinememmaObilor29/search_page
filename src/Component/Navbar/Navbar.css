@@ -1,130 +1,49 @@
-.s-icon{
+.s-icon {
     margin-top: 0.5rem;
     margin-right: 21rem;
 }
 
-/* .nav-list{
-    margin-left: 30rem;
-} */
-
-
 @media (max-width: 1280px) {
-    .search-div{
+    .search-div {
         width: 25%;
     }
-    .search{
+    .search {
         width: 20rem;
     }
-    .s-icon{
+    .s-icon {
         margin-right: 50rem;
     }
-    .nav-item{
+    /* .nav-item {
         display: none;
-    }
-    .login{
+    } */
+    .login {
         margin-right: 42rem;
     }
 }
 
-
-
-
-
-
-/* .search{
-    width: 40rem;
-    margin-right: 10em;
-}
-
-.hamburger{
-    display: none;
-}
-
-
-@media (max-width: 1280px) {
-    .search{
-        width: 30rem;
-        margin-left: 2rem;
-    }
-    .s-icon{
-        margin-left: 2rem;
-    }
-    .nav-links{
-        margin-right: 8rem;
-    }
-}
-
 @media (max-width: 1024px) {
-    .search{
-        width: 25rem;
-        margin-left: 3rem;
+    .search-div {
+        width: 20%;
     }
-    .s-icon{
-        margin-left: 3rem;
+    .login {
+        margin-right: 33rem;
     }
-    .hamburger{
-        display: block;
-        cursor: pointer;
-        margin-right: 7rem;
-     }
-        .nav-menu{
-         display: none;
-         background-color: #222;
-        }
-        .nav-menu-visible{
-         display: flex;
-        }
-        .hamburger.open{
-        transform: rotate(90deg);
-     }
-}
-
-@media (max-width: 800px) {
-    .search{
-        width: 20rem;
-        margin-right: 20rem;
-    }
-    .s-icon{
-        margin-left: 3rem;
-    }
-   .login{
-   width: 12rem;
-   height: 2rem;
-   padding: 0;
-   margin-left: 31rem;
-   margin-top: -2rem;
-   }
-   .hamburger{
-   display: block;
-   cursor: pointer;
-}
-   .nav-menu{
-    display: none;
-    background-color: #222;
-   }
-   .nav-menu-visible{
-    display: flex;
-   }
-   .hamburger.open{
-   transform: rotate(90deg);
-}
 }
 
 @media (max-width: 500px) {
-    .search{
-        margin-top: -2rem;
-        margin-left: 10rem;
-        width: 27rem;
+    .search-div {
+        width: 5%;
+        margin-top: 1.2rem;
+        margin-bottom: 1rem;
+        margin-right: 15rem;
     }
-    .s-icon{
-        margin-left: 10rem;
-        margin-top: -2rem;
+    .search {
+        width: auto;
     }
-   .login{
-    display: none;
-   }
-   .hamburger{
-    margin-left: 50rem;
-    margin-top: -2rem;
-   }
-} */
+    .h-icon {
+        margin-left: -5rem;
+    }
+    .block{
+        width: 20%;
+    }
+}

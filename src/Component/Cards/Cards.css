@@ -1,35 +1,28 @@
 @media (max-width: 1280px) {
     .child{
        display: grid;
-       grid-template-columns: 1fr 1fr;
-       width: 80%;
+       grid-template-columns: 1fr;
+       width: 40%;
     }
     #google-map-iframe{
-       width: 100%;
-       margin-left: -7.5rem;
+       width: 56%;
+       margin-left: -23rem;
     }
  }
  
  @media (max-width: 1024px) {
-    .details{
-     padding: 6px;
-     height: 290px;
-    }
-    .title{
-     height: 10rem;
-    }
-    .child{
-     display: grid;
-     grid-template-columns: none;
-     width: 70%;
-    }
-      #google-map-iframe{
-       width: 108%;
-       margin-left: -8rem;
-    }
+   .child{
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 42%;
+   }
+   #google-map-iframe{
+      width: 56%;
+      margin-left: -17.5rem;
+   }
     }
     
- /* @media (max-width: 800px) {
+ @media (max-width: 500px) {
      .details{
       padding: 6px;
      }
@@ -37,6 +30,11 @@
       height: 10rem;
      }
      .child{
+      display: grid;
       grid-template-columns: 1fr 1fr;
+      width: 110%;
      }
-     } */
+     #google-map-iframe{
+     display: none;
+   }
+     }

@@ -40,10 +40,9 @@
        margin-right: 1.5rem;
     }
    }
- 
+   
  @media (max-width: 500px) {
     .parent{
-       width: 53rem;
        margin-top: -0.5rem;
        border-top: 1px solid #CBD5E0;
     }

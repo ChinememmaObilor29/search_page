@@ -35,17 +35,56 @@
 }
 
 @media (max-width: 500px) {
+        body{
+        overflow-x: hidden;
+    }
+    
     .search-div {
         width: 5%;
         margin-top: 1.2rem;
         margin-bottom: 1rem;
         margin-right: 15rem;
     }
+
+
     .search {
         width: auto;
+      
     }
-    .h-icon {
+    
+    .nav{
+        position: absolute;
+        display: grid;
+        place-content: center;
         margin-left: -5rem;
+        
+       
+    }              
+         
+    .nav-item{
+        display: grid;
+        margin-left: 1rem;
+        
+
+    }
+
+
+    .login{
+        width: 12rem;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: -70px;
+        
+    }
+
+    .X{
+        margin-left: 1rem;
+        position: absolute;
+    }
+  
+
+    .h-icon {
+        margin-left: -4.5rem;
     }
     .block{
         width: 20%;
